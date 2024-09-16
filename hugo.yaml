@@ -9,7 +9,7 @@ params:
 
   homeInfoParams:
     Title: Hi, I'm Samuel Skean.
-    Content: I'm a Master's student in [Computer Science at UIC](https://cs.uic.edu/) interested in programming languages, app development, and graphics. I'll post any interesting projects I build and any research I do.
+    Content: I'm a Master's student in [Computer Science at UIC](https://cs.uic.edu/) interested in programming languages, app development, systems programming, and graphics. I'll post any interesting projects I build and any research I do.
 
   socialIcons:
     - name: "Github"
