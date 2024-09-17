@@ -9,10 +9,27 @@ params:
 
   homeInfoParams:
     Title: Hi, I'm Samuel Skean.
-    Content: I'm a Master's student in [Computer Science at UIC](https://cs.uic.edu/) interested in programming languages, app development, systems programming, and graphics. I'll post any interesting projects I build and any research I do.
+    Content: >
+      I'm a Master's student in [Computer Science at UIC](https://cs.uic.edu/) interested in
+      programming languages, app development, systems programming, and graphics. I'll post
+      any interesting projects I build and any research I do.
 
   socialIcons:
     - name: "Github"
       url: "https://github.com/samuel-skean/"
     - name: "LinkedIn"
       url: "https://www.linkedin.com/in/samuel-skean-nod/"
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: Projects
+          url: projects/
+          weight: 5
