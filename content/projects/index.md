@@ -12,7 +12,7 @@ It's a simple path tracer! I'm following [Ray Tracing in One Weekend](https://ra
 But this is one of my favorite projects. I'm only part-way through the project, but I've also added:
 - Lights (the tutorial only has background lighting)
 - A Command-line Interface with clap
-- A JSON input format for describing the world
+- A JSON input format for describing the world, parsed with serde
 - A live preview with SDL2 or pixels and winit
 
 
@@ -20,4 +20,4 @@ But this is one of my favorite projects. I'm only part-way through the project, 
 
 ![A screenshot of my bezier drawing program](bezier-several-curves.png)
 
-In addition to the above, I wrote a small program that renders beziers (a kind of mathematical curve) to the screen. I was inspired by this wonderful video: [The Beauty of Bézier Curves](https://www.youtube.com/watch?v=aVwxzDHniEw). It's the same structure as the previous project, using mostly the same dependencies - clap, JSON, pixels, and winit.
+In addition to the above, I wrote a small program that renders beziers (a kind of mathematical curve) to the screen. I was inspired by this wonderful video: [The Beauty of Bézier Curves](https://www.youtube.com/watch?v=aVwxzDHniEw). It's the same structure as the previous project, using mostly the same dependencies - clap, serde, pixels, and winit.
