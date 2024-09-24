@@ -9,7 +9,7 @@ summary:  "Projects"
 ![A screenshot of my pathtracer](raytracer-crazy-background.png)
 
 It's a simple path tracer! I'm following [Ray Tracing in One Weekend](https://raytracing.github.io/books/RayTracingInOneWeekend.html) by Peter Shirley et al., but I'm doing it in Rust for nicer compiler errors.
-This is one of my favorite projects. I'm only part-way through the project, but I've also added:
+This is one of my favorite projects. I'm only part-way, but I've also added:
 - Lights (the tutorial only has background lighting)
 - A Command-line Interface with clap
 - A JSON input format for describing the world, parsed with serde
