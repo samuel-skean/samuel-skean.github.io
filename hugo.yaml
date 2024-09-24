@@ -12,7 +12,7 @@ params:
     Content: >
       I'm a Master's student in [Computer Science at UIC](https://cs.uic.edu/) interested in
       programming languages, app development, systems programming, and graphics. There aren't
-      any posts here right now, but there will be! In the meantime, you can check out my [projects](projects).
+      any posts here right now, but there will be! In the meantime, you can check out my [projects](projects/).
 
   socialIcons:
     - name: "Github"
