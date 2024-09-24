@@ -15,6 +15,6 @@ The resources are arranged vaguely from beginner to advanced, but I'm not attemp
     This was my go-to resource for reviewing Go when I had to help teach it a few semester's ago. It's a simple intro to a famously simple language, and it highlights both my favorite and least favorite  aspects of the language. It's surprisingly comprehensive for its ~1 hour 20 minute runtime, too. I also have to mention [*Storing Data in Control Flow*](https://research.swtch.com/pcdata) by Russ Cox, simply because it finally made me realize that concurrency can make code *way* simpler, even if it doesn't speed things up.
 - [*Learn Rust with Entirely Too Many Linked Lists*](https://rust-unofficial.github.io/too-many-lists/) by Aria Desires
 
-    Okay, this one's also a classic. Full disclosure: I haven't quite gotten through this one - I'm still a little scared of `unsafe`, and I don't have time at the moment. But it mixes snark and content really well, and Rust is one of the most interesting languages from the 21st century. Before starting, you should know how to write a linked-list.
+    Okay, this one's also a classic. Full disclosure: I haven't quite gotten through this one - I'm still a little scared of `unsafe`, and I don't have time at the moment. But it mixes snark and content really well, and Rust is one of the most interesting new languages of the 21st century. Before starting, you should know how to write a linked-list.
 
 I'll update this as I find other great resources.
