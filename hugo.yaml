@@ -2,7 +2,7 @@ baseURL: 'https://samuel-skean.github.io/'
 languageCode: 'en-us'
 title: 'The Sklog'
 theme: 'papermod'
-copyright: '© 2024 [Samuel Skean](https://samuel-skean.github.io/)'
+copyright: '© 2024 Samuel Skean'
 
 params:
   disableThemeToggle: true
@@ -11,14 +11,18 @@ params:
     Title: Hi, I'm Samuel Skean.
     Content: >
       I'm a Master's student in [Computer Science at UIC](https://cs.uic.edu/) interested in
-      programming languages, app development, systems programming, and graphics. I'll post
-      any interesting projects I build and any research I do.
+      programming languages, app development, systems programming, and graphics. There aren't
+      any posts here right now, but there will be! In the meantime, you can check out my [projects](projects).
 
   socialIcons:
     - name: "Github"
       url: "https://github.com/samuel-skean/"
     - name: "LinkedIn"
       url: "https://www.linkedin.com/in/samuel-skean-nod/"
+  
+  footer:
+    text: "[Site Repository](https://github.com/samuel-skean/samuel-skean.github.io)"
+  
 
 languages:
   en:
@@ -30,6 +34,12 @@ languages:
       series: series
     menu:
       main:
+        - name: Resume
+          url: resume.pdf
+          weight: 3
         - name: Projects
           url: projects/
-          weight: 5
+          weight: 4
+        - name: About Me
+          url: about-me/
+          weight: 5  
