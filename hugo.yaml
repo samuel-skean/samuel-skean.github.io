@@ -20,6 +20,9 @@ params:
       url: "https://github.com/samuel-skean/"
     - name: "LinkedIn"
       url: "https://www.linkedin.com/in/samuel-skean-nod/"
+    - name: "Resume"
+      url: "resume.pdf"
+      showname: true
   
   footer:
     text: "[Site Repository](https://github.com/samuel-skean/samuel-skean.github.io)"
@@ -35,12 +38,9 @@ languages:
       series: series
     menu:
       main:
-        - name: Resume
-          url: resume.pdf
-          weight: 3
         - name: Projects
           url: projects/
           weight: 4
-        - name: Me!
+        - name: About Me
           url: about-me/
           weight: 5
