@@ -1,7 +1,7 @@
 ---
 title: 'Some Programming Resources'
 date: 2024-09-24
-lastmod: 2024-10-04
+lastmod: 2025-01-15
 draft: false
 ---
 
@@ -16,6 +16,6 @@ The resources are arranged vaguely from beginner to advanced, but I'm not attemp
     This was my go-to resource for reviewing Go when I had to help teach it a few semesters ago. It's a simple intro to a famously simple language, and it highlights both my favorite and least favorite  aspects of the language. It's surprisingly comprehensive for its ~1 hour 20 minute runtime, too. I also have to mention [*Storing Data in Control Flow*](https://research.swtch.com/pcdata) by Russ Cox, simply because it finally made me realize that concurrency can make code *way* simpler, even if it doesn't speed things up.
 - [*Learn Rust with Entirely Too Many Linked Lists*](https://rust-unofficial.github.io/too-many-lists/) by Aria Desires
 
-    This one is *brilliant*. Full disclosure: I haven't quite gotten through it - I'm still a little scared of `unsafe`, and I don't have time at the moment. But it mixes snark and content really well, and Rust is one of the most interesting new languages of the 21st century. Before starting, you should know how to write a linked-list in a language like C or C++. Exposure to functional languages (especially OCaml or F#) will also help, but isn't necessary.
+    This one is *brilliant*. I've gotten through all of this except for the part implementing cursors. It mixes snark and content really well, and Rust is one of the most interesting new languages of the 21st century. Before starting, you should know how to write a linked-list in a language like C or C++. Exposure to functional languages (especially OCaml or F#) will also help, but isn't necessary.
 
 I'll update this as I find other great resources.
