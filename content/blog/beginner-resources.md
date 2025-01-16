@@ -10,7 +10,7 @@ The resources are arranged vaguely from beginner to advanced, but I'm not attemp
 
 - [*A Byte of Python*](https://python.swaroopch.com/) by Swaroop C. H.
 
-    This was my first-ever exposure to programming, and I think it's still a pretty good place to start. Python is a simple, (mostly) sane language, which makes it a good one to start with, and Swaroop distills the basics without dumbing it down. I dont know if I'd have liked coding without this book. Probably, but maybe not!
+    This was my first-ever exposure to programming, and I think it's still a pretty good place to start. Python is a simple, (mostly) sane language, which makes it a good one to start with, and Swaroop distills the basics without dumbing it down. I don't know if I'd have liked coding without this book. Probably, but maybe not!
 - [*The Go Language*](https://www.youtube.com/playlist?list=PLIbUZ3URbL0Hn-2v6oB9nMfIfJPYDY9Nv) by Brian Will
     
     This was my go-to resource for reviewing Go when I had to help teach it a few semesters ago. It's a simple intro to a famously simple language, and it highlights both my favorite and least favorite  aspects of the language. It's surprisingly comprehensive for its ~1 hour 20 minute runtime, too. I also have to mention [*Storing Data in Control Flow*](https://research.swtch.com/pcdata) by Russ Cox, simply because it finally made me realize that concurrency can make code *way* simpler, even if it doesn't speed things up.
