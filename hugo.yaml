@@ -4,6 +4,8 @@ title: 'The Sklog'
 theme: 'papermod'
 copyright: '© 2025 Samuel Skean'
 
+enableGitInfo: true
+
 params:
   disableThemeToggle: true
   ShowCodeCopyButtons: true

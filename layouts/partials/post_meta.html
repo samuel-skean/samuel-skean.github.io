@@ -1,14 +1,29 @@
-<!-- This is a tiny modification of the hugo papermod thing. I probably should
+{{/* This is a tiny modification of the hugo papermod thing. I probably should
 fork the papermod submodule, but since I want to stick with this theme, this
-maybe makes it clearer how to update to a new version of papermod. -->
+maybe makes it clearer how to update to a new version of papermod. */}}
 {{- $scratch := newScratch }}
 
+{{/* Initializing $dateFormatted here so it is accessible outside of the if statement that displays it. */}}
+{{ $dateFormatted := .Date | time.Format (default "January 2, 2006" site.Params.DateFormat) }}
 {{- if not .Date.IsZero -}}
-{{- $scratch.Add "meta" (slice (printf "<span title='%s'>Posted on %s</span>" (.Date) (.Date | time.Format (default "January 2, 2006" site.Params.DateFormat)))) }}
+{{- $scratch.Add "meta" (slice (printf "<span title='%s'>Posted on %s</span>" (.Date) $dateFormatted)) }}
 {{- end }}
 
 {{- if not .Lastmod.IsZero -}}
-{{- $scratch.Add "meta" (slice (printf "<span title='%s'>Last modified on %s</span>" (.Lastmod) (.Lastmod | time.Format (default "January 2, 2006" site.Params.DateFormat)))) }}
+{{ $lastmodFormatted := .Lastmod | time.Format (default "January 2, 2006" site.Params.DateFormat)}}
+
+{{- /* It might be more appealing/robust to check if the dates were different *as
+dates*, but I was unable to use the time.Date method from within Go templates
+because it returns too many things. At least, I think that's not allowed.
+
+More to the point, I really do only care to display the last-modified date if it
+would appear different from the original publication date. So in some sense,
+even though this is "messier" for comparing the human-represented form, it is
+what I actually want. */ -}}
+
+{{- if ne $dateFormatted $lastmodFormatted -}}
+{{- $scratch.Add "meta" (slice (printf "<span title='%s'>Last modified on %s</span>" (.Lastmod) $lastmodFormatted)) }}
+{{- end }}
 {{- end }}
 
 {{- if (.Param "ShowReadingTime") -}}

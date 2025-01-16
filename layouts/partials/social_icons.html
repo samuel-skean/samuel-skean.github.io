@@ -5,10 +5,10 @@
         title="{{ $title }}">
         {{ partial "svg.html" . }}
         {{- if .showname -}}
-        <!-- This is a bit of a hack, and really only looks good enough if this
-        is the last icon. -->
-        <!-- TODO: Why does it seem like this has changed the spacing between
-        the social icons? -->
+        {{/* This is a bit of a hack, and really only looks good enough if this
+        is the last icon.
+        TODO: Why does it seem like this has changed the spacing between
+        the social icons? */}}
         <span style="font-size: 16px; padding: 2px 8px">{{ $title }}</span>
         {{- end -}}
     </a>

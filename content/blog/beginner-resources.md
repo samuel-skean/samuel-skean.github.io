@@ -1,7 +1,6 @@
 ---
 title: 'Some Programming Resources'
 date: 2024-09-24
-lastmod: 2025-01-15
 draft: false
 ---
 
