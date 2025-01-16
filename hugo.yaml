@@ -6,6 +6,7 @@ copyright: '© 2025 Samuel Skean'
 
 params:
   disableThemeToggle: true
+  ShowCodeCopyButtons: true
 
   homeInfoParams:
     Title: Hi, I'm Samuel Skean.
