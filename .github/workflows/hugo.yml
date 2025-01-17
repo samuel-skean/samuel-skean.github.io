@@ -1,4 +1,5 @@
-# Copied from https://gohugo.io/hosting-and-deployment/hosting-on-github/#procedure.
+# Originally copied from https://gohugo.io/hosting-and-deployment/hosting-on-github/#procedure.
+# All modifications are commits since this message appeared in the file.
 # Sample workflow for building and deploying a Hugo site to GitHub Pages
 name: Deploy Hugo site to Pages
 
@@ -45,6 +46,12 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
+
+          # This causes Github actions to perform a "deep clone" of the project,
+          # which fetches all commits. That's necessary for the GitInfo to be
+          # correct for each page, which I use for the last-modified date on each
+          # page. See this documentation: https://gohugo.io/methods/page/gitinfo/#hosting-considerations
+          # and this discussion: https://discourse.gohugo.io/t/github-pages-gets-wrong-gitinfo-for-a-post-page/52009/3.
           fetch-depth: 0 
       - name: Setup Pages
         id: pages
