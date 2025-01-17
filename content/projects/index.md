@@ -17,7 +17,7 @@ This is one of my favorite projects. I'm only part-way, but I've also added:
 - A Command-line Interface with clap
 - A JSON input format for describing the world to be rendered, parsed with serde
 - A live preview with pixels and winit
-- Parallelized rendering, using either [rayon](https://crates.io/crates/rayon) or [OS threads](https://doc.rust-lang.org/std/thread/). Threads turned out significantly faster! This can speed things up by almost a factor of how many cores you have, but the path tracer is still very slow, so renders still take many minutes.
+- Parallelized rendering, using either [rayon](https://crates.io/crates/rayon) or [OS threads](https://doc.rust-lang.org/std/thread/). Threads turned out significantly faster!
 
 
 # [Bézier Drawing Program](https://github.com/samuel-skean/SkeanSplinesFun)
