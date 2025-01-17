@@ -4,6 +4,9 @@ url:  "/projects"
 summary:  "Projects"
 ---
 
+The title of each project is a link to its code repository.
+<!-- TODO: Make these links open in a new tab. Maybe with hugo shortcodes? Markdown can't express it on its own, but I sure hope I don't need to just write embedded html. 
+Also, if you have to explain the interface, there's probably something wrong with it. Is there a way to present this content that makes it more clear where the links are? -->
 # [Path Tracer](https://github.com/samuel-skean/My_Raytracing_Adventures)
 
 ![A screenshot of my pathtracer](raytracer-crazy-background.png)
@@ -13,7 +16,7 @@ This is one of my favorite projects. I'm only part-way, but I've also added:
 - Lights (the tutorial only has background lighting)
 - A Command-line Interface with clap
 - A JSON input format for describing the world, parsed with serde
-- A live preview with SDL2 or pixels and winit
+- A live preview with pixels and winit
 
 
 # [Bézier Drawing Program](https://github.com/samuel-skean/SkeanSplinesFun)
