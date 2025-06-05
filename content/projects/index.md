@@ -14,7 +14,7 @@ Also, if you have to explain the interface, there's probably something wrong wit
 It's a simple path tracer! I'm following [Ray Tracing in One Weekend](https://raytracing.github.io/books/RayTracingInOneWeekend.html) by Peter Shirley et al., but I'm doing it in Rust for nicer compiler errors.
 This is one of my favorite projects. I'm only part-way, but I've also added:
 - Lights (the tutorial only has background lighting)
-- A Command-line Interface with clap
+- A command-line interface with clap
 - A JSON input format for describing the world to be rendered, parsed with serde
 - A live preview with pixels and winit
 - Parallelized rendering, using either [rayon](https://crates.io/crates/rayon) or [OS threads](https://doc.rust-lang.org/std/thread/). Threads turned out significantly faster!
