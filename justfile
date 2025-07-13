@@ -5,7 +5,7 @@ serve address="localhost":
     hugo serve --bind {{ address }} --baseURL {{ address }}
 
 # Discover the local ipv4 address, then serve from that.
-serve-local-net: (serve `ip --json a | jq 'map(select(.ifname == "enp0s1")).[0].addr_info | map(select(.family == "inet")).[0].local'`)
+serve-local-net: (serve `ip --json a | jq 'map(select(.ifname == "enp0s1"))[0].addr_info | map(select(.family == "inet"))[0].local'`)
 
 # Unfortunately, it seems like `just` doesn't support variable substitution
 # within backticks. See
