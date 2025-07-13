@@ -10,9 +10,7 @@ serve-local-net: (serve `ip --json a | jq 'map(select(.ifname == "enp0s1"))[0].a
 # Unfortunately, it seems like `just` doesn't support variable substitution
 # within backticks. See
 # https://just.systems/man/en/command-evaluation-using-backticks.html. It seems
-# like the shell function might support this, but that's on a newer version of
-# `just` than is part of my Ubuntu. So, no configurable network interface name for
-# me! :(
+# like the shell function might support this. I haven't tried it. TODO: Try it!
 
 deploy:
     # This is safe because if any command fails, `just` will quit.
