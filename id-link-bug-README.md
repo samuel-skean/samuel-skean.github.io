@@ -1,4 +1,4 @@
-All browsers mentioned are the latest versions available as of 20250712. TODO: Record all those versions.
+All browsers mentioned are the latest versions available as of 20250712.
 macOS Safari: Version 18.5 (20621.2.5.11.8)
 macOS Firefox: 140.0.4 (aarch64)
 macOS Brave: Brave 1.80.120 (Official Build) (arm64)
