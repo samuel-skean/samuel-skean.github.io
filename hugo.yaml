@@ -1,50 +1,49 @@
-baseURL: 'https://samuel-skean.github.io/'
-languageCode: 'en-us'
-title: 'The Sklog'
-theme: 'papermod'
-copyright: '© 2025 Samuel Skean'
+baseURL: "https://samuel-skean.github.io/"
+languageCode: "en-us"
+title: "The Sklog"
+theme: "papermod"
+copyright: "© 2025 Samuel Skean"
 
 enableGitInfo: true
 
 params:
-  disableThemeToggle: true
-  ShowCodeCopyButtons: true
+    disableThemeToggle: true
+    ShowCodeCopyButtons: true
 
-  homeInfoParams:
-    Title: Hi, I'm Samuel Skean.
-    Content: >
-      I'm a master's student studying [Computer Science at
-      UIC](https://cs.uic.edu/) interested in programming languages, app
-      development, systems programming, and graphics. I'm looking for
-      internships and jobs. If you think you have something for me, please reach
-      out via LinkedIn!
+    homeInfoParams:
+        Title: Hi, I'm Samuel Skean.
+        Content: >
+            I'm a master's student studying [Computer Science at
+            UIC](https://cs.uic.edu/) interested in programming languages, app
+            development, systems programming, and graphics. I'm looking for
+            internships and jobs. If you think you have something for me, please reach
+            out via LinkedIn!
 
-  socialIcons:
-    - name: "Github"
-      url: "https://github.com/samuel-skean/"
-    - name: "LinkedIn"
-      url: "https://www.linkedin.com/in/samuel-skean-nod/"
-    - name: "Resume"
-      url: "resume.pdf"
-      showname: true
-  
-  footer:
-    text: "[Site Repository](https://github.com/samuel-skean/samuel-skean.github.io)"
-  
+    socialIcons:
+        - name: "Github"
+          url: "https://github.com/samuel-skean/"
+        - name: "LinkedIn"
+          url: "https://www.linkedin.com/in/samuel-skean-nod/"
+        - name: "Resume"
+          url: "resume.pdf"
+          showname: true
+
+    footer:
+        text: "[Site Repository](https://github.com/samuel-skean/samuel-skean.github.io)"
 
 languages:
-  en:
-    languageName: "English"
-    weight: 1
-    taxonomies:
-      category: categories
-      tag: tags
-      series: series
-    menu:
-      main:
-        - name: Projects
-          url: projects/
-          weight: 4
-        - name: About Me
-          url: about-me/
-          weight: 5
+    en:
+        languageName: "English"
+        weight: 1
+        taxonomies:
+            category: categories
+            tag: tags
+            series: series
+        menu:
+            main:
+                - name: Projects
+                  url: projects/
+                  weight: 4
+                - name: About Me
+                  url: about-me/
+                  weight: 5
