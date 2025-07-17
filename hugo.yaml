@@ -13,11 +13,10 @@ params:
     homeInfoParams:
         Title: Hi, I'm Samuel Skean.
         Content: >
-            I'm a master's student studying [{{< underlined >}}Computer Science at
-            UIC{{< /underlined >}}](https://cs.uic.edu/) interested in programming languages, app
-            development, systems programming, and graphics. I'm looking for
-            internships and jobs. If you think you have something for me, please reach
-            out via LinkedIn!
+            I'm a recent graduate in [{{< underlined >}}Computer Science from UIC{{< /underlined >}}](https://cs.uic.edu).
+            I'm interested in programming languages, systems programming, security, graphics, and app development.
+            In between bouts of programming, I [{{< underlined >}}get on a bike and stay on it{{< /underlined >}}](/about-me#biking-png)
+            for a few hours at a time.
 
     socialIcons:
         - name: "Github"
