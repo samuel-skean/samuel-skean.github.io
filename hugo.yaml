@@ -28,7 +28,7 @@ params:
           showname: true
 
     footer:
-        text: "[Site Repository](https://github.com/samuel-skean/samuel-skean.github.io)"
+        text: "[Site Source Code](https://github.com/samuel-skean/samuel-skean.github.io)"
 
 languages:
     en:
