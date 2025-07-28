@@ -27,7 +27,7 @@ params:
           showname: true
 
     footer:
-        text: "[Site Source Code](https://github.com/samuel-skean/samuel-skean.github.io)"
+        text: "{{< underlined_link href=\"https://github.com/samuel-skean/samuel-skean.github.io\" rel=\"noopener noreferrer\" target=\"_blank\">}}Site Source Code{{< /underlined_link >}}"
 
 languages:
     en:
