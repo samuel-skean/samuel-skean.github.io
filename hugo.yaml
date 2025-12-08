@@ -19,6 +19,10 @@ params:
     socialIcons:
         - name: "Github"
           url: "https://github.com/samuel-skean/"
+        - name: "Youtube"
+          url: "https://www.youtube.com/@samuel-skean"
+        - name: "Email"
+          url: "mailto:sparky_32_evacuee@icloud.com"
         - name: "LinkedIn"
           url: "https://www.linkedin.com/in/samuel-skean-nod/"
         - name: "Resume"
