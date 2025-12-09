@@ -26,7 +26,7 @@ params:
         - name: "LinkedIn"
           url: "https://www.linkedin.com/in/samuel-skean-nod/"
         - name: "Resume"
-          url: "resume.pdf"
+          url: "samuel-skean-resume.pdf"
           showname: true
 
     footer:
