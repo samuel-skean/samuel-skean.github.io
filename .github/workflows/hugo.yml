@@ -34,7 +34,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.128.0
+      HUGO_VERSION: 0.152.2
     steps:
       - name: Install Hugo CLI
         run: |
@@ -52,7 +52,7 @@ jobs:
           # correct for each page, which I use for the last-modified date on each
           # page. See this documentation: https://gohugo.io/methods/page/gitinfo/#hosting-considerations
           # and this discussion: https://discourse.gohugo.io/t/github-pages-gets-wrong-gitinfo-for-a-post-page/52009/3.
-          fetch-depth: 0 
+          fetch-depth: 0
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
