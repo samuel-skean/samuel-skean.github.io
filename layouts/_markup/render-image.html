@@ -1,0 +1,38 @@
+{{- $src := .Destination -}}
+{{- $alt := .Text -}}
+{{- $title := .Title -}}
+
+{{- /* Try to find the image as a Page Resource to allow processing */ -}}
+{{- $img := .Page.Resources.GetMatch (printf "*%s" $src) -}}
+
+{{- if $img -}}
+  {{- /* Resize to a maximum width of 1000px using width-only; avoid upscaling */ -}}
+  {{- $processed := cond (gt $img.Width 1000) ($img.Resize "1000x webp") ($img.Resize (printf "%dx webp" $img.Width)) -}}
+  {{- $fallback := cond (gt $img.Width 1000) ($img.Resize "1000x") $img -}}
+  <picture>
+    <source
+      srcset="{{ $processed.RelPermalink }}"
+      type="image/webp"
+    >
+    <img
+      src="{{ $fallback.RelPermalink }}"
+      width="{{ $fallback.Width }}"
+      height="{{ $fallback.Height }}"
+      alt="{{ $alt }}"
+      {{ with $title }}title="{{ . }}"{{ end }}
+      loading="lazy"
+      decoding="async"
+      style="max-width: 100%; height: auto;"
+    >
+  </picture>
+{{- else -}}
+  {{- /* Fallback: non-Page Resource (e.g., absolute/remote). No processing; constrain via CSS. */ -}}
+  <img
+    src="{{ $src }}"
+    alt="{{ $alt }}"
+    {{ with $title }}title="{{ . }}"{{ end }}
+    loading="lazy"
+    decoding="async"
+    style="max-width: 100%; height: auto;"
+  >
+{{- end -}}
