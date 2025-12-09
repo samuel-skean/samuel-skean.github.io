@@ -20,8 +20,6 @@
       height="{{ $fallback.Height }}"
       alt="{{ $alt }}"
       {{ with $title }}title="{{ . }}"{{ end }}
-      loading="lazy"
-      decoding="async"
       style="max-width: 100%; height: auto;"
     >
   </picture>
@@ -31,8 +29,6 @@
     src="{{ $src }}"
     alt="{{ $alt }}"
     {{ with $title }}title="{{ . }}"{{ end }}
-    loading="lazy"
-    decoding="async"
     style="max-width: 100%; height: auto;"
   >
 {{- end -}}
