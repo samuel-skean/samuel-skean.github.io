@@ -6,7 +6,7 @@ summary:  "About Me"
 
 ![A profile image of me from 2024](me.png)
 
-I've been programming seriously for about 6 years, and unseriously for 11. It's frustrating, rewarding, and magical. I haven't really specialized: I enjoy doing "the whole banana", [as Steve Jobs once put it](https://youtu.be/wvhW8cp15tk?si=4e90tnhFE73BHlq1&t=5016), because I think that's the only way to really understand the end product. I also like [working with others](projects#collaborations), though :).
+I've been programming seriously for about 6 years, and unseriously for 11. It's frustrating, rewarding, and magical. I haven't really specialized: I enjoy doing "the whole banana", [as Steve Jobs once put it](https://youtu.be/wvhW8cp15tk?si=4e90tnhFE73BHlq1&t=5016), because I think that's the only way to really understand the end product. I also like [working with others](/projects#collaborations "sameTab"), though :).
 
 <!--- TODO: Link "working with others" to any projects I've done that have involved working with others. --->
 

@@ -5,8 +5,7 @@ summary:  "Projects"
 ---
 
 The title of each project is a link to its code repository.
-<!-- TODO: Make these links open in a new tab. Maybe with hugo shortcodes? Markdown can't express it on its own, but I sure hope I don't need to just write embedded html.
-Also, if you have to explain the interface, there's probably something wrong with it. Is there a way to present this content that makes it more clear where the links are? -->
+<!-- TODO: If you have to explain the interface, there's probably something wrong with it. Is there a way to present this content that makes it more clear where the links are? -->
 ## [Path Tracer](https://github.com/samuel-skean/My_Raytracing_Adventures)
 
 ![A screenshot of my pathtracer](raytracer-crazy-background.png)
@@ -26,7 +25,7 @@ This is one of my favorite projects. I'm only part-way, but I've also added:
 
 In addition to the above, I wrote a small program that renders beziers (a kind of mathematical curve) to the screen. I was inspired by this wonderful video: [The Beauty of Bézier Curves](https://www.youtube.com/watch?v=aVwxzDHniEw). It's the same structure as the previous project, using mostly the same dependencies - clap, serde, pixels, and winit.
 
-# Collaborations
+# Collaborations {#collaborations}
 
 ## [Nullability in OO](https://github.com/Olympicene/Nullability-in-OO)
 
