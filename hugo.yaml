@@ -25,8 +25,8 @@ params:
           url: "mailto:sparky_32_evacuee@icloud.com"
         - name: "LinkedIn"
           url: "https://www.linkedin.com/in/samuel-skean-nod/"
-        - name: "Resume"
-          url: "samuel-skean-resume.pdf"
+        - name: "Résumé"
+          url: "samuel-skean-résumé.pdf"
           showname: true
 
     footer:
