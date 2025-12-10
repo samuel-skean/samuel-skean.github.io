@@ -1,7 +1,7 @@
 default:
     just --list
 
-serve address="localhost":
+serve address="localhost": jxl
     hugo serve --bind {{ address }} --baseURL {{ address }}
 
 # Discover the local ipv4 address, then serve from that.
@@ -15,3 +15,6 @@ deploy:
     git merge --ff-only beta
     git switch beta
     git push --all
+
+jxl:
+    scripts/generate-jxl.sh

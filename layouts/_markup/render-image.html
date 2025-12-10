@@ -1,3 +1,4 @@
+{{- /* Generated largely by ChatGPT. */ -}}
 {{- $src := .Destination -}}
 {{- $alt := .Text -}}
 {{- $title := .Title -}}
@@ -7,17 +8,54 @@
 
 {{- if $img -}}
   {{- /* Resize to a maximum width of 1000px using width-only; avoid upscaling */ -}}
-  {{- $processed := cond (gt $img.Width 1000) ($img.Resize "1000x webp") ($img.Resize (printf "%dx webp" $img.Width)) -}}
-  {{- $fallback := cond (gt $img.Width 1000) ($img.Resize "1000x") $img -}}
+  {{- $maxw := cond (gt $img.Width 1000) 1000 $img.Width -}}
+
+  {{- /* Attempt AVIF; include only if subtype is actually avif */ -}}
+  {{- $avif := $img.Resize (printf "%dx avif" $maxw) -}}
+
+  {{- /* WebP is required; fail if libvips didn’t produce webp */ -}}
+  {{- $webp := $img.Resize (printf "%dx webp" $maxw) -}}
+  {{- if ne $webp.MediaType.SubType "webp" -}}
+    {{- errorf "render-image: WebP generation failed; got %q for source %q (ensure libvips supports webp)" $webp.MediaType.SubType $img.Name -}}
+  {{- end -}}
+
+  {{- /* JPEG fallback for <img> */ -}}
+  {{- $jpeg := $img.Resize (printf "%dx jpg" $maxw) -}}
+
+  {{- /* Prefer static JXL under /jxl/<page dir>/<stem>.jxl; fall back to sibling .jxl if present */ -}}
+  {{- $stem := replaceRE "\\.[^.]+$" "" $img.Name -}}
+  {{- $jxlUrl := printf "/jxl/%s%s.jxl" .Page.File.Dir $stem -}}
+  {{- $jxlSibling := .Page.Resources.GetMatch (printf "*%s.jxl" $stem) -}}
+
   <picture>
+    {{- if $jxlSibling }}
     <source
-      srcset="{{ $processed.RelPermalink }}"
+      srcset="{{ $jxlSibling.RelPermalink }}"
+      type="image/jxl"
+    >
+    {{- else }}
+    <source
+      srcset="{{ $jxlUrl }}"
+      type="image/jxl"
+    >
+    {{- end }}
+
+    {{- if eq $avif.MediaType.SubType "avif" }}
+    <source
+      srcset="{{ $avif.RelPermalink }}"
+      type="image/avif"
+    >
+    {{- end }}
+
+    <source
+      srcset="{{ $webp.RelPermalink }}"
       type="image/webp"
     >
+
     <img
-      src="{{ $fallback.RelPermalink }}"
-      width="{{ $fallback.Width }}"
-      height="{{ $fallback.Height }}"
+      src="{{ $jpeg.RelPermalink }}"
+      width="{{ $jpeg.Width }}"
+      height="{{ $jpeg.Height }}"
       alt="{{ $alt }}"
       {{ with $title }}title="{{ . }}"{{ end }}
       style="max-width: 100%; height: auto;"

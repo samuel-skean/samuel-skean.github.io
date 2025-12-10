@@ -58,6 +58,17 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: Install image codecs and tools (AVIF/WebP/JXL)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libvips \
+            libheif1 libheif-examples libheif-dev \
+            libaom0 rav1e \
+            libwebp6 webp \
+            libjxl-tools
+      - name: Generate JPEG XL assets
+        run: bash ./scripts/generate-jxl.sh
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache

@@ -14,3 +14,7 @@ hugo.linux
 
 # Temporary lock file while building
 /.hugo_build.lock
+# Ignore generated JPEG XL files in static
+/static/jxl/
+
+.DS_Store
