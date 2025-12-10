@@ -64,8 +64,8 @@ jobs:
           sudo apt-get install -y \
             libvips \
             libheif1 libheif-examples libheif-dev \
-            libaom0 rav1e \
-            libwebp6 webp \
+            libaom0 \
+            libwebp-tools \
             libjxl-tools
       - name: Generate JPEG XL assets
         run: bash ./scripts/generate-jxl.sh
