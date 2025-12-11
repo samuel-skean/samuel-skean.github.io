@@ -29,6 +29,6 @@ In addition to the above, I wrote a small program that renders beziers (a kind o
 
 ## [Nullability in OO](https://github.com/Olympicene/Nullability-in-OO)
 
-My friend [Kevin](https://olympicene.dev) and I wrote a simple interpreter for a Object-Oriented language with a concept of nullability. The idea was to emulate Swift, Dart, or Kotlin with the ability to statically prevent most null pointer errors from being possible by requiring the user to indicate if a field should be nullable. This was mostly my idea, but implementing the interpreter in OCaml was a group effort. It was both trickier and easier than expected.
+My friend [Kevin](https://olympicene.dev) and I wrote a simple interpreter for an Object-Oriented language with a concept of nullability. The idea was to emulate Swift, Dart, or Kotlin with the ability to statically prevent most null pointer errors from being possible by requiring the user to indicate if a field should be nullable. This was mostly my idea, but implementing the interpreter in OCaml was a group effort. It was both trickier and easier than expected.
 
 Right now, there's no frontend, so you'd have to write your programs in the abstract syntax tree. But I might make one someday!
