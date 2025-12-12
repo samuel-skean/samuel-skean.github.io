@@ -6,7 +6,7 @@ summary:  "About Me"
 
 ![A profile image of me from 2024](me.png)
 
-I touched some Python when I was 11, but it never got past broken text adventures. But when I picked up C++ in college, I realized I just had to keep doing it. It's frustrating, rewarding, and magical. I haven't really specialized: I enjoy doing "the whole banana", [as Steve Jobs once put it](https://youtu.be/wvhW8cp15tk?si=4e90tnhFE73BHlq1&t=5016), because I think that's the only way to really understand the end product. I also like [working with others](/projects/#collaborations "sameTab"), though :).
+I touched some Python when I was 11, but I never got past making broken text adventures. But when I picked up C++ in college, I realized I just had to keep programming. It's frustrating, rewarding, and magical. I haven't really specialized: I enjoy doing "the whole banana", [as Steve Jobs once put it](https://youtu.be/wvhW8cp15tk?si=4e90tnhFE73BHlq1&t=5016), because I think that's the only way to really understand the end product. I also like [working with others](/projects/#collaborations "sameTab"), though :).
 
 <!--- TODO: Link "working with others" to any projects I've done that have involved working with others. --->
 
