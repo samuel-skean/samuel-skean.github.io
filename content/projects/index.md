@@ -12,17 +12,17 @@ The Github icon next to each title is a link to the repository.
 It's a simple path tracer! I'm following [Ray Tracing in One Weekend](https://raytracing.github.io/books/RayTracingInOneWeekend.html) by Peter Shirley et al., but I'm doing it in Rust for nicer compiler errors.
 This is one of my favorite projects. I'm only part-way, but I've also added:
 - Lights (the tutorial only has background lighting)
-- A command-line interface with clap
-- A JSON input format for describing the world to be rendered, parsed with serde
-- A live preview with pixels and winit
-- Parallelized rendering, using either [rayon](https://crates.io/crates/rayon) or [OS threads](https://doc.rust-lang.org/std/thread/). Threads turned out significantly faster!
+- A command-line interface with [`clap`](https://crates.io/crates/clap)
+- A JSON input format for describing the world to be rendered, parsed with [`serde`](https://crates.io/crates/serde)
+- A live preview with [`pixels`](https://crates.io/crates/pixels) and [`winit`](https://crates.io/crates/winit)
+- Parallelized rendering, using either [`rayon`](https://crates.io/crates/rayon) or [OS threads](https://doc.rust-lang.org/std/thread/). Threads turned out significantly faster!
 
 
 ## Bézier Drawing Program {{< github-icon url="https://github.com/samuel-skean/SkeanSplinesFun" title="Bézier Drawing Program Repository" >}}
 
-![A screenshot of my bezier drawing program](bezier-several-curves.png)
+![A screenshot of my bézier drawing program](bézier-several-curves.png)
 
-In addition to the above, I wrote a small program that renders beziers (a kind of mathematical curve) to the screen. I was inspired by this wonderful video: [The Beauty of Bézier Curves](https://www.youtube.com/watch?v=aVwxzDHniEw). It's the same structure as the previous project, using mostly the same dependencies - clap, serde, pixels, and winit.
+In addition to the above, I wrote a small program that renders béziers (a kind of mathematical curve) to the screen. I was inspired by this wonderful video: [The Beauty of Bézier Curves](https://www.youtube.com/watch?v=aVwxzDHniEw). It's the same structure as the previous project, using mostly the same dependencies - [`clap`](https://crates.io/crates/clap), [`serde`](https://crates.io/crates/serde), [`pixels`](https://crates.io/crates/pixels), and [`winit`](https://crates.io/crates/winit).
 
 # Collaborations {#collaborations}
 
