@@ -22,7 +22,8 @@ params:
         - name: "Youtube"
           url: "https://www.youtube.com/@samuel-skean"
         - name: "Email"
-          url: "mailto:sparky_32_evacuee@icloud.com"
+          url: "#"
+          parts: ["skid", ".", "oxbow", "-9w", "@", "icloud", ".", "com"]
         - name: "LinkedIn"
           url: "https://www.linkedin.com/in/samuel-skean-nod/"
         - name: "Résumé"
