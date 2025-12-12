@@ -4,9 +4,8 @@ url:  "/projects"
 summary:  "Projects"
 ---
 
-The title of each project is a link to its code repository.
-<!-- TODO: If you have to explain the interface, there's probably something wrong with it. Is there a way to present this content that makes it more clear where the links are? -->
-## [Path Tracer](https://github.com/samuel-skean/My_Raytracing_Adventures)
+The Github icon next to each title is a link to the repository.
+## Path Tracer {{< github-icon url="https://github.com/samuel-skean/My_Raytracing_Adventures" title="Path Tracer Repository" >}}
 
 ![A screenshot of my pathtracer](raytracer-crazy-background.png)
 
@@ -19,7 +18,7 @@ This is one of my favorite projects. I'm only part-way, but I've also added:
 - Parallelized rendering, using either [rayon](https://crates.io/crates/rayon) or [OS threads](https://doc.rust-lang.org/std/thread/). Threads turned out significantly faster!
 
 
-## [Bézier Drawing Program](https://github.com/samuel-skean/SkeanSplinesFun)
+## Bézier Drawing Program {{< github-icon url="https://github.com/samuel-skean/SkeanSplinesFun" title="Bézier Drawing Program Repository" >}}
 
 ![A screenshot of my bezier drawing program](bezier-several-curves.png)
 
@@ -27,7 +26,7 @@ In addition to the above, I wrote a small program that renders beziers (a kind o
 
 # Collaborations {#collaborations}
 
-## [Nullability in OO](https://github.com/Olympicene/Nullability-in-OO)
+## Nullability in OO {{< github-icon url="https://github.com/Olympicene/Nullability-in-OO" title="Nullability in OO Repository" >}}
 
 My friend [Kevin](https://olympicene.dev) and I wrote a simple interpreter for an Object-Oriented language with a concept of nullability. The idea was to emulate Swift, Dart, or Kotlin with the ability to statically prevent most null pointer errors from being possible by requiring the user to indicate if a field should be nullable. This was mostly my idea, but implementing the interpreter in OCaml was a group effort. It was both trickier and easier than expected.
 

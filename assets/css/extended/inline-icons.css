@@ -1,0 +1,76 @@
+/* Inline icon styling for GitHub icons placed beside headings on the Projects page.
+   The shortcode renders: <h2><a>Title</a> <a class="inline-icon"><svg></svg></a></h2>
+   PaperMod uses .post-content for article body; target h1–h3 for project titles.
+*/
+
+/* Make the icon link render inline beside the heading with consistent spacing */
+.post-content h1 a.inline-icon,
+.post-content h2 a.inline-icon,
+.post-content h3 a.inline-icon {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  margin-left: 0.35em; /* spacing from title text */
+  text-decoration: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  background-image: none !important;
+}
+
+.post-content h1 a.inline-icon:hover,
+.post-content h2 a.inline-icon:hover,
+.post-content h3 a.inline-icon:hover,
+.post-content h1 a.inline-icon:active,
+.post-content h2 a.inline-icon:active,
+.post-content h3 a.inline-icon:active,
+.post-content h1 a.inline-icon:visited,
+.post-content h2 a.inline-icon:visited,
+.post-content h3 a.inline-icon:visited {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  background-image: none !important;
+}
+
+/* Clear any theme-added decorative pseudo-elements that may create underlines */
+.post-content h1 a.inline-icon::after,
+.post-content h2 a.inline-icon::after,
+.post-content h3 a.inline-icon::after,
+.post-content h1 a.inline-icon::before,
+.post-content h2 a.inline-icon::before,
+.post-content h3 a.inline-icon::before {
+  content: none !important;
+  display: none !important;
+  box-shadow: none !important;
+  border-bottom: none !important;
+  background-image: none !important;
+}
+
+/* Size and align the GitHub SVG icon to match the heading text */
+.post-content h1 a.inline-icon svg,
+.post-content h2 a.inline-icon svg,
+.post-content h3 a.inline-icon svg {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em; /* slight baseline tweak for better alignment */
+  color: inherit;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+/* Prevent oversized icons from expanding due to external CSS */
+.post-content h1 a.inline-icon svg,
+.post-content h2 a.inline-icon svg,
+.post-content h3 a.inline-icon svg {
+  max-width: 1em;
+  max-height: 1em;
+}
+
+/* Accessible focus styling on the icon link */
+.post-content h1 a.inline-icon:focus,
+.post-content h2 a.inline-icon:focus,
+.post-content h3 a.inline-icon:focus {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}

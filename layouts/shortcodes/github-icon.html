@@ -1,0 +1,8 @@
+{{- $url := .Get "url" -}}
+{{- if not $url -}}
+{{- errorf "github-icon shortcode: missing required param 'url'" -}}
+{{- end -}}
+{{- $title := .Get "title" | default "Github" -}}
+<a href="{{ trim $url " " | safeURL }}" target="_blank" rel="noopener noreferrer" title="{{ $title }}" class="github-icon inline-icon" aria-label="{{ $title }}">
+  {{ partial "svg.html" (dict "name" "Github" "title" $title) }}
+</a>
