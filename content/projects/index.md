@@ -18,9 +18,9 @@ This is one of my favorite projects. I'm only part-way, but I've also added:
 - Parallelized rendering, using either [`rayon`](https://crates.io/crates/rayon) or [OS threads](https://doc.rust-lang.org/std/thread/). Threads turned out significantly faster!
 
 
-## Bézier Drawing Program {{< github-icon url="https://github.com/samuel-skean/SkeanSplinesFun" title="Bézier Drawing Program Repository" >}}
+## Bézier Renderer {{< github-icon url="https://github.com/samuel-skean/SkeanSplinesFun" title="Bézier Drawing Program Repository" >}}
 
-![A screenshot of my bézier drawing program](bézier-several-curves.png)
+![A screenshot of my bézier drawing program, with three curves in different colors, each a single pixel thick](bézier-several-curves.png)
 
 In addition to the above, I wrote a small program that renders béziers (a kind of mathematical curve) to the screen. I was inspired by this wonderful video: [The Beauty of Bézier Curves](https://www.youtube.com/watch?v=aVwxzDHniEw). It's the same structure as the previous project, using mostly the same dependencies - [`clap`](https://crates.io/crates/clap), [`serde`](https://crates.io/crates/serde), [`pixels`](https://crates.io/crates/pixels), and [`winit`](https://crates.io/crates/winit).
 
