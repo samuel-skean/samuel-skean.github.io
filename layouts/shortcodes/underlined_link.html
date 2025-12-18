@@ -1,3 +1,0 @@
-<!-- underlined_link -->
-<!-- This needs to be its own thing to prevent weird underlining after "the Computer Science program at UIC." that happens if I use the two separate `link` and `underlined` shortcodes. I don't understand why, I imagine it's a quirk of html. But I guess also `hugo`? `Hugo`'s also involved in the difference! -->
-<a href="{{ .Get "href" }}" rel="{{ .Get "rel" }}" target="{{ .Get "target" }}"><u>{{- .Inner -}}</u></a>

@@ -1,0 +1,26 @@
+<!-- Largely written by ChatGPT: https://chatgpt.com/share/6937653f-fc08-8006-9cf9-a576c2e11d11 -->
+{{- /* Read override title if present */ -}}
+{{- $override := .Title | default "" -}}
+
+{{- /* Default: open in new tab */ -}}
+{{- $openInNewTab := true -}}
+
+{{- /* Apply explicit overrides */ -}}
+{{- if eq $override "sameTab" -}}
+  {{- $openInNewTab = false -}}
+{{- else if eq $override "newTab" -}}
+  {{- $openInNewTab = true -}}
+{{- end -}}
+
+{{- if $openInNewTab -}}
+  <a href="{{ .Destination | safeURL }}"
+      {{/* Both of these are necessary for good "newTab" links: the `target=` makes the link open in a new tab, the `rel=` makes it not a security hole. */}}
+     target="_blank"
+     rel="noopener noreferrer">
+    {{- .Text -}}
+  </a>
+{{- else -}}
+  <a href="{{ .Destination | safeURL }}">
+    {{- .Text -}}
+  </a>
+{{- end -}}

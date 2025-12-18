@@ -1,16 +1,27 @@
 <div class="social-icons" {{ with .align}}align="{{.}}" {{- end }}>
     {{- range site.Params.socialIcons }}
-    {{ $title := (.title | default .name) | title }}
-    <a href="{{ trim .url " " | safeURL }}" target="_blank" rel="noopener noreferrer me"
-        title="{{ $title }}">
+    {{- $title := (.title | default .name) | title -}}
+    {{- $url := trim .url " " -}}
+    {{- $isEmail := eq (.name | lower) "email" -}}
+    {{- if $isEmail -}}
+    <a
+        href="#"
+        rel="me"
+        title="{{ $title }}"
+        data-parts='{{ .parts | jsonify }}' onclick="var parts = JSON.parse(this.dataset.parts); location.href='mailto:' + parts.join(''); return false;"
+    >
         {{ partial "svg.html" . }}
         {{- if .showname -}}
-        {{/* This is a bit of a hack, and really only looks good enough if this
-        is the last icon.
-        TODO: Why does it seem like this has changed the spacing between
-        the social icons? */}}
         <span style="font-size: 16px; padding: 2px 8px">{{ $title }}</span>
         {{- end -}}
     </a>
+    {{- else -}}
+    <a href="{{ $url | safeURL }}" target="_blank" rel="noopener noreferrer me" title="{{ $title }}">
+        {{ partial "svg.html" . }}
+        {{- if .showname -}}
+        <span style="font-size: 16px; padding: 2px 8px">{{ $title }}</span>
+        {{- end -}}
+    </a>
+    {{- end -}}
     {{- end }}
 </div>
