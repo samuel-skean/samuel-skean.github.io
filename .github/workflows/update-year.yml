@@ -1,4 +1,4 @@
-name: Update year in license file and site footer
+name: Update year in site footer
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  update-license-year:
+  update-year:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
