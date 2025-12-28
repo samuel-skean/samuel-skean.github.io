@@ -3,29 +3,20 @@
    PaperMod uses .post-content for article body; target h1–h3 for project titles.
 */
 
-/* Make the icon link render inline beside the heading with consistent spacing */
-.post-content h1 a.inline-icon,
-.post-content h2 a.inline-icon,
-.post-content h3 a.inline-icon {
+/* General inline icon styling */
+.post-content .inline-icon {
   display: inline-block;
   vertical-align: middle;
   line-height: 1;
-  margin-left: 0.35em; /* spacing from title text */
   text-decoration: none !important;
   border-bottom: none !important;
   box-shadow: none !important;
   background-image: none !important;
 }
 
-.post-content h1 a.inline-icon:hover,
-.post-content h2 a.inline-icon:hover,
-.post-content h3 a.inline-icon:hover,
-.post-content h1 a.inline-icon:active,
-.post-content h2 a.inline-icon:active,
-.post-content h3 a.inline-icon:active,
-.post-content h1 a.inline-icon:visited,
-.post-content h2 a.inline-icon:visited,
-.post-content h3 a.inline-icon:visited {
+.post-content .inline-icon:hover,
+.post-content .inline-icon:active,
+.post-content .inline-icon:visited {
   text-decoration: none !important;
   border-bottom: none !important;
   box-shadow: none !important;
@@ -33,12 +24,8 @@
 }
 
 /* Clear any theme-added decorative pseudo-elements that may create underlines */
-.post-content h1 a.inline-icon::after,
-.post-content h2 a.inline-icon::after,
-.post-content h3 a.inline-icon::after,
-.post-content h1 a.inline-icon::before,
-.post-content h2 a.inline-icon::before,
-.post-content h3 a.inline-icon::before {
+.post-content .inline-icon::after,
+.post-content .inline-icon::before {
   content: none !important;
   display: none !important;
   box-shadow: none !important;
@@ -46,10 +33,8 @@
   background-image: none !important;
 }
 
-/* Size and align the GitHub SVG icon to match the heading text */
-.post-content h1 a.inline-icon svg,
-.post-content h2 a.inline-icon svg,
-.post-content h3 a.inline-icon svg {
+/* Size and align the GitHub SVG icon to match the text */
+.post-content .inline-icon svg {
   width: 1em;
   height: 1em;
   vertical-align: -0.125em; /* slight baseline tweak for better alignment */
@@ -57,20 +42,19 @@
   fill: none;
   stroke: currentColor;
   stroke-width: 2;
-}
-
-/* Prevent oversized icons from expanding due to external CSS */
-.post-content h1 a.inline-icon svg,
-.post-content h2 a.inline-icon svg,
-.post-content h3 a.inline-icon svg {
   max-width: 1em;
   max-height: 1em;
 }
 
+/* Specific styling for headers if needed (e.g. margin) */
+.post-content h1 .inline-icon,
+.post-content h2 .inline-icon,
+.post-content h3 .inline-icon {
+  margin-left: 0.35em; /* spacing from title text */
+}
+
 /* Accessible focus styling on the icon link */
-.post-content h1 a.inline-icon:focus,
-.post-content h2 a.inline-icon:focus,
-.post-content h3 a.inline-icon:focus {
+.post-content .inline-icon:focus {
   outline: 2px solid currentColor;
   outline-offset: 2px;
 }
