@@ -4,7 +4,7 @@ url:  "/projects"
 summary:  "Projects"
 ---
 
-The GitHub icon next to each title is a link to the repository.
+The GitHub icon ({{< github-icon >}}) next to each title is a link to the repository.
 ## Path Tracer {{< github-icon url="https://github.com/samuel-skean/My_Raytracing_Adventures" title="Path Tracer Repository" >}} {#path-tracer}
 
 ![A screenshot of my path tracer](raytracer-crazy-background.png)
