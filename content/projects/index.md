@@ -4,10 +4,11 @@ url:  "/projects"
 summary:  "Projects"
 ---
 
-The GitHub icon next to each title is a link to the repository.
+The GitHub icon ({{< github-icon >}}) next to each title is a link to the repository.
 ## Path Tracer {{< github-icon url="https://github.com/samuel-skean/My_Raytracing_Adventures" title="Path Tracer Repository" >}} {#path-tracer}
 
 ![A screenshot of my path tracer](raytracer-crazy-background.png)
+[Full Size Image](raytracer-crazy-background.png "newTab")
 
 It's a simple path tracer! I'm following [Ray Tracing in One Weekend](https://raytracing.github.io/books/RayTracingInOneWeekend.html) by Peter Shirley et al., but I'm doing it in Rust for nicer compiler errors.
 This is one of my favorite projects. I'm only part-way, but I've also added:
