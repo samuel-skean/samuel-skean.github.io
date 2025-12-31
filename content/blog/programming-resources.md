@@ -16,7 +16,7 @@ The resources are arranged vaguely from beginner to advanced, but I'm not attemp
 - [*OCaml Programming: Correct, Efficient, Beautiful*](https://cs3110.github.io/textbook/cover.html) primarily by Michael R. Clarkson {#ocaml-programming-correct-efficient-beautiful}
 
     This Cornell textbook did a great job teaching me functional programming, and reminding me why data structures are beautiful. I especially recommend the chapters on references and red-black trees. Keep in mind that I read this mostly in Fall 2023, and the textbook is frequently updated, so it may be different now.
-- [*Learn Rust with Entirely Too Many Linked Lists*](https://rust-unofficial.github.io/too-many-lists/) by Aria Desires {#learn-rist-with-entirely-too-many-linked-lists}
+- [*Learn Rust with Entirely Too Many Linked Lists*](https://rust-unofficial.github.io/too-many-lists/) by Aria Desires {#learn-rust-with-entirely-too-many-linked-lists}
 
     This one is *brilliant*. I've gotten through all of this except for the part implementing cursors. It mixes snark and content really well, and Rust is one of the most interesting new languages of the 21st century. Before starting, you should know how to write a linked-list in a language like C or C++. Exposure to functional languages (especially OCaml or F#) will also help, but isn't necessary.
     
