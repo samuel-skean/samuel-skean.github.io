@@ -52,3 +52,10 @@ languages:
                 - name: About Me
                   url: about-me/
                   weight: 5
+
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true
+        title: true
