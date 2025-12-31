@@ -16,4 +16,4 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           path: hugo.yaml
-          transform: "^copyright:\s*"©\s*(?<from>\d{4})(?:-\d{4})?"
+          transform: '(?<=^copyright:\s*"©\s*)(?<from>\d{4})(?:-\d{4})?'
