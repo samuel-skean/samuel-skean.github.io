@@ -10,7 +10,7 @@ The resources are arranged vaguely from beginner to advanced, but I'm not attemp
 - [*A Byte of Python*](https://python.swaroopch.com/) by Swaroop C. H.
   {#a-byte-of-python}
 
-    This was my first-ever exposure to programming, and I think it's still a pretty good place to start. Python is a simple, (mostly) sane language, which makes it a good one to start with, and Swaroop distills the basics without dumbing it down. I don't know if I'd have liked coding without this book. Probably, but maybe not!
+    This was my first-ever exposure to programming, and I think it's still a pretty good place to start. Python is simple to start and mostly sane, which makes it a good language to start with. Plus, Swaroop distills the basics of coding without dumbing it down. I don't know if I'd have liked coding without this book. Probably, but maybe not!
 - [*The Go Language*](https://www.youtube.com/playlist?list=PLIbUZ3URbL0Hn-2v6oB9nMfIfJPYDY9Nv) by Brian Will
   {#the-go-language-by-brian-will}
     
