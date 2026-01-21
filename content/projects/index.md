@@ -29,7 +29,7 @@ In addition to the above, I wrote a small program that renders béziers (a kind 
 
 ![A screenshot of my speedometer, with a big 0 on the right, a checkbox to keep the screen on, an accuracy reading in +/- meters, a button to indicate and change the speed units, an info button, and a github icon](speedometer.png)
 
-This was my main project over my winter 2025-2026 break. It's available at [speedometer.samuel-skean.net](https://speedometer.samuel-skean.net) if you wanna play with it! I almost entirely vibe-coded it - first with Github Copilot, then with ChatGPT and Gemini in my editor, and finally settling on using [Google Jules](jules.google.com) for most of it.
+This was my main project over my winter 2025-2026 break. It's available at [speedometer.samuel-skean.net](https://speedometer.samuel-skean.net) if you wanna play with it! I almost entirely vibe-coded it - first with Github Copilot, then with ChatGPT and Gemini in my editor, and finally settling on using [Google Jules](https://jules.google.com) for most of it.
 
 I knew a fair amount of the stuff I'd've needed to do it myself before I started, and the vast majority of the time was spent on polish. I may write up my experience more fully later. It was definitely good to get familiar with how it feels to vibe-code, but I really don't want to end up with it as my job. My experience taught me a lot of the same things as [this wonderful arstechnica article](https://arstechnica.com/information-technology/2026/01/10-things-i-learned-from-burning-myself-out-with-ai-coding-agents/), though of course the author of that made several more impressive projects.
 
