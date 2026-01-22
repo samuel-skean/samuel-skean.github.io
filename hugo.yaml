@@ -16,6 +16,9 @@ params:
             I'm a recent graduate of [{{< underlined >}}the Computer Science program at UIC{{< /underlined >}}](https://cs.uic.edu).
             I'm interested in programming languages, systems programming, security, graphics, and app development.
 
+
+            The logo is by [{{< underlined >}}samef{{< /underlined >}}](https://samef.dev/).
+
     socialIcons:
         - name: "Github"
           url: "https://github.com/samuel-skean/"

@@ -1,0 +1,21 @@
+{{- with site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+    {{- $image := resources.Get "/sklog-logo.png" -}}
+    {{- if $image -}}
+        {{- $resized := $image.Resize "500x" -}}
+        {{- $processed := $resized.Process "webp" -}}
+        <img src="{{ $processed.RelPermalink }}" alt="A cartoon image of me poking out of a log." style="width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto; margin-bottom: 2rem;"/>
+    {{- else -}}
+        <img src="/sklog-logo.png" alt="A cartoon image of me poking out of a log."/>
+    {{- end -}}
+    <header class="entry-header">
+        <h1>{{ .Title | markdownify }}</h1>
+    </header>
+    <div class="entry-content">
+        {{ .Content | markdownify }}
+    </div>
+    <footer class="entry-footer">
+        {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+    </footer>
+</article>
+{{- end -}}
