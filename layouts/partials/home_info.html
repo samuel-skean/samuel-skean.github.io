@@ -2,8 +2,7 @@
 <article class="first-entry home-info">
     {{- $image := resources.Get "/sklog-logo.png" -}}
     {{- if $image -}}
-        {{- $resized := $image.Resize "500x" -}}
-        {{- $processed := $resized.Process "webp" -}}
+        {{- $processed := $image.Resize "1024x webp" -}}
         <img src="{{ $processed.RelPermalink }}" width="{{ $processed.Width }}" height="{{ $processed.Height }}" alt="A cartoon image of me poking out of a log." style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto; margin-bottom: 2rem;"/>
     {{- end -}}
     <header class="entry-header">
