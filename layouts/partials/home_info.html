@@ -4,9 +4,9 @@
     {{- if $image -}}
         {{- $resized := $image.Resize "500x" -}}
         {{- $processed := $resized.Process "webp" -}}
-        <img src="{{ $processed.RelPermalink }}" width="{{ $processed.Width }}" height="{{ $processed.Height }}" alt="A cartoon image of me poking out of a log." style="width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto; margin-bottom: 2rem;"/>
+        <img src="{{ $processed.RelPermalink }}" width="{{ $processed.Width }}" height="{{ $processed.Height }}" alt="A cartoon image of me poking out of a log." style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto; margin-bottom: 2rem;"/>
     {{- else -}}
-        <img src="/sklog-logo.png" width="1024" height="327" alt="A cartoon image of me poking out of a log."/>
+        <img src="/sklog-logo.png" width="1024" height="327" alt="A cartoon image of me poking out of a log." style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto; margin-bottom: 2rem;"/>
     {{- end -}}
     <header class="entry-header">
         <h1>{{ .Title | markdownify }}</h1>
